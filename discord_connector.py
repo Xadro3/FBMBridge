@@ -3,7 +3,7 @@ import dotenv
 import aiohttp
 import discord
 
-import fbm_connctor
+import fbm_connector
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -58,14 +58,14 @@ async def on_message(message: discord.Message):
     if message.author.bot:
         return
 
-    urls = fbm_connctor.extract_facebook_urls(message.content)
+    urls = fbm_connector.extract_facebook_urls(message.content)
     if not urls:
         return
 
     async with message.channel.typing():
         for url in urls:
             try:
-                listing = await fbm_connctor.scrape_listing(url)
+                listing = await fbm_connector.scrape_listing(url)
             except aiohttp.ClientResponseError as exc:
                 await message.channel.send(
                     f"Failed to scrape listing ({exc.status}): {url}"

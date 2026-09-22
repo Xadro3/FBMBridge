@@ -1,0 +1,34 @@
+{
+  "marketplace_listing_title": "Vintage bicycle",
+  "listingUrl": "https://www.facebook.com/marketplace/item/123456789",
+  "share_uri": "https://www.facebook.com/share/abc",
+  "facebookUrl": "https://facebook.com/marketplace/item/123456789",
+  "listing_price": {
+    "formatted_amount": "$150",
+    "amount": "150"
+  },
+  "location": {
+    "reverse_geocode": {
+      "city": "Austin",
+      "city_page": {
+        "display_name": "Austin, TX"
+      }
+    }
+  },
+  "redacted_description": {
+    "text": "Lightly used, pickup preferred."
+  },
+  "primary_listing_photo": {
+    "image": {
+      "uri": "https://example.com/bike.jpg"
+    }
+  },
+  "is_sold": false,
+  "is_pending": false,
+  "is_hidden": false,
+  "is_live": true,
+  "delivery_types": ["IN_PERSON", "SHIPPING"],
+  "marketplace_listing_seller": {
+    "name": "Alex"
+  }
+}
